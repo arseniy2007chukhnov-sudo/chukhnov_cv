@@ -12,5 +12,5 @@ labeled_image = label(processed_image)
 max_processed = np.max(labeled_image)
 
 print(f"{max_origin - max_processed} stars on the image")
-plt.imshow(image)
+plt.imshow(labeled_image)
 plt.show()
