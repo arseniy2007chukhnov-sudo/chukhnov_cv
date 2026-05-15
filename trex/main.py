@@ -26,8 +26,6 @@ x2_b = 160
 y1_b = 100
 y2_b = 140                                                                                       
 
-is_jumping = False
-is_ducking = False
 
 with MSS() as mon:
     while True:
@@ -51,7 +49,7 @@ with MSS() as mon:
         S2 = np.sum(roi2) / 255.0
         if S2 >100 and S1 < 10:
             ptg.keyDown("down")
-            time.sleep(0.2 )
+            time.sleep(0.3  )
             ptg.keyUp("down")
             continue
         elif S1 >100 and S2 <85:
